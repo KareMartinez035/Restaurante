@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante del Chef - Reserva</title>   
+    <script src="jquery.js"></script>
+    <script src="jqueryease.js"></script>
+    <script src="jquery.fancybox-1.3.4.js"></script>
+    <script src="jquery.fancybox-1.3.4.pack.js"></script>
+    <script src="jquery.mousewheel-3.0.4.pack.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Restaurante.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script>
+        $(document).ready(function(){
+            $("#horario").hover(function(){
+                $(this).stop().animate({
+                    marginLeft:"0"
+                },500,"easeInSine")
+            },function(){
+                $(this).stop().animate({
+                    marginLeft:"-175px"
+                },2500,"easeOutBounce")
+            })
+        });
+        $(document).ready(function(){
+                    $("#o1").hide();
+                    $("#p1").mouseover(function(){
+                        $("#o1").toggle("slow");
+                    })
+                    })
+        $(document).ready(function(){
+                    $("#o2").hide();
+                    $("#p2").mouseover(function(){
+                        $("#o2").toggle("slow");
+                   
+                    })
+                })
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div id="p1">
+                <ul>
+                    <li>
+                        <a href="inicio.html">Quienes Somos</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="o1">
+                <ul>
+                    <a class="otro" href="inicio.html"><li>Misión</li></a>
+                    <a class="otro" href="inicio.html"><li>Visión</li></a>
+                    <a class="otro" href="inicio.html"><li>Ubicación</li></a>
+                </ul>
+            </div>
+            <div id="p2">
+                <ul>
+                <li>
+                    <a href="Fotos.html">Galeria</a>
+                </li>
+            </ul> 
+            </div>
+            <div id="o2">
+                <ul>
+                    <a class="otro" href="Fotos.html"><li>Cumpleaños</li></a>
+                    <a class="otro" href="Fotos.html"><li>Aniversario</li></a>
+                    <a class="otro" href="Fotos.html"><li>Matrimonios</li></a>
+                </ul>
+            </div>
+            <div id="p3">
+            <ul>
+                <li>
+                    <a href="Reserva.html">Reserva</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+<main>
+    <img id="horario" src="Imagenes restaurnte/horario.jpg">
+    <img id="chef" src="Imagenes restaurnte/chef1.png" width="400px" height="200px">
+    <article>
+        <section class="formu">
+            <form class="Fecha"action="#" method="get">
+            <div class="uno">
+
+                <label for="Nombre">Nombre</label>
+                <input class="formulario" type="text" name="Nombre" placeholder="Nombre Apellido">
+
+                <label for="date">Fecha</label>
+                <input class="formulario" type="date" name="Fecha">
+
+                <label for="Horario">Horario</label>
+                <input  class="formulario" type="time" name="Horario">
+
+                <label for="Tamaño del grupo">Tamaño del grupo</label>
+                <input  class="formulario" type="number" min="2" max="200" name="Tamaño del grupo">
+            </div>
+            <div class="dos">
+                <label for="message">Observaciones</label>
+                <br>
+                <textarea name="" id="" cols="15" rows="10" class="input-padron"></textarea>
+                <br>
+                <center><input class="env-form" type="submit" value="Enviar"></imput>
+                <input class="env-form" type="reset" value="Reset"></imput></center>
+            </div>
+            </form>
+        </section>
+    </article>
+</main>
+<<footer>
+    <h2 class="pie-pagina"><i class='bx bx-copyright'></i>     Restaurante del Chef <br>
+        <a href="http://www,facebook.com" style="color: black"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="http://www.twitter.com" style="color: black"><i class='bx bxl-twitter' ></i></a>
+        <a href="http://www.Instagram.com" style="color: black"><i class='bx bxl-instagram-alt' ></i></a>
+        <a href="http://www.tiktok.com" style="color: black"><i class='bx bxl-tiktok' ></i></a></h2>
+</footer>              
+</body>     
+</html>
+
+           
+            

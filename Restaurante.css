@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-image: url("Imagenes restaurnte/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Anton', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    position: absolute; 
+    display: inline;
+    top: 35px;
+    left: 60%;
+}
+.menu li{  
+    display: inline;
+    margin-left: 20px;
+}
+.menu li a{
+    font-size: 35px;
+    color: rgb(192, 94, 87);
+    font-size: 30px;
+    text-shadow: 15px 15px 20px;
+}
+#p1, #p2, #p3{
+    position: relative;
+    margin: 5px;
+}
+#o1, #o2{
+    position: relative;
+}
+.otro{
+    color:#f0d0b2
+}
+#horario{
+    margin-left: -175px;
+}
+#chef{
+    position: absolute;
+    z-index: -1;
+}
+.inicio{
+    background-color: antiquewhite;
+    border-radius: 15px;
+    margin: 30px 150px 80px 150px;
+    padding: 20px;
+    line-height: 30px;
+}
+p{
+text-align: justify;
+}
+h2{
+text-align: center;
+}
+.grupo1{
+    position: center;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border: solid black;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 2s;
+    box-shadow: 1px 10px 25px rgb(0, 0, 0,0.5);
+}
+#Cumpleaños, #Aniversario, #Matrimonios{
+    background-color: antiquewhite;
+    margin: 20px;
+    width: 1030px;
+    height: 270px;
+    border-radius: 15px;
+}
+.formu{
+    padding: 12px 20px;
+    margin: 5px 0;
+    font-size: 25px;
+    margin-left: 200px;
+   color: rgb(224, 170, 170);
+   text-shadow: 15px 15px 20px;
+}
+.formulario, textarea{
+    width: 400px;
+    background-color: #f0d0b2;
+    color: rgb(112, 106, 102);
+    font-size: 18px;
+    padding: 14px 20px;
+    margin: 5px 0;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;   
+}
+.uno{
+    display: inline-block;
+}
+.dos{
+    display: inline-block;
+    margin-left: 80px;
+}
+.env-form{
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #e4a66d;
+    color: #272524;
+    padding: 5px;
+}
+.formulario:hover, .env-form:hover, textarea:hover{
+    background-color: #f7b1c0;
+}
+
+footer{
+   background-color: #786e65;
+   padding: 20px;
+}
+
+/*@media screen and (max-width: 650px){
+    header{
+        height: 230px;
+    }
+    .menu li a{
+        top:5px
+    }
+    header h2 img{
+        margin-top: 10%;
+    }
+    .formu, .mapa {
+        margin-left: 18px;
+        width: 360px;
+        width: 100%;
+        padding: 12px 20px;
+        box-sizing: border-box;
+    }
+}

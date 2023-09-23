@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante del Chef - Inicio</title>
+    <script src="jquery.js"></script>
+    <script src="jqueryease.js"></script>
+    <script src="jquery.fancybox-1.3.4.js"></script>
+    <script src="jquery.fancybox-1.3.4.pack.js"></script>
+    <script src="jquery.mousewheel-3.0.4.pack.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Restaurante.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script>
+        $(document).ready(function(){
+            $("#horario").hover(function(){
+                $(this).stop().animate({
+                    marginLeft:"0"
+                },500,"easeInSine")
+            },function(){
+                $(this).stop().animate({
+                    marginLeft:"-175px"
+                },2500,"easeOutBounce")
+            })
+        });
+        $(document).ready(function(){
+                    $("#o1").hide();
+                    $("#p1").mouseover(function(){
+                        $("#o1").toggle("slow");
+                    })
+                    })
+        $(document).ready(function(){
+                    $("#o2").hide();
+                    $("#p2").mouseover(function(){
+                        $("#o2").toggle("slow");
+                   
+                    })
+                })
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div id="p1">
+                <ul>
+                    <li>
+                        <a href="inicio.html">Quienes Somos</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="o1">
+                <ul>
+                    <a class="otro" href="#Mision"><li>Misión</li></a>
+                    <a class="otro" href="#Vision"><li>Visión</li></a>
+                    <a class="otro" href="#Contacto"><li>Ubicación</li></a>
+                </ul>
+            </div>
+            <div id="p2">
+                <ul>
+                <li>
+                    <a href="Fotos.html">Galeria</a>
+                </li>
+            </ul> 
+            </div>
+            <div id="o2">
+                <ul>
+                    <a class="otro" href="Fotos.html"><li>Cumpleaños</li></a>
+                    <a class="otro" href="Fotos.html"><li>Aniversario</li></a>
+                    <a class="otro" href="Fotos.html"><li>Matrimonios</li></a>
+                </ul>
+            </div>
+            <div id="p3">
+            <ul>
+                <li>
+                    <a href="Reserva.html">Reserva</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <img id="horario" src="Imagenes restaurnte/horario.jpg">
+        <img id="chef" src="Imagenes restaurnte/chef1.png" width="400px" height="200px"> 
+        <div class="inicio"> 
+        <p>
+         Sé parte de todas nuestras experiencias, catas y eventos. En ratatouille tenemos un espíritu libre y alegre, por esta razón hemos creado un lugar para compartir todas nuestras vivencias contigo. Y por su puesto, queremos que seas parte de este magnífico lugar, con muchas sorpresas y buenos momentos..
+        </p>
+        <br>
+        <br>
+        <p id="Mision">
+            Misión
+            <br>
+            Somos una empresa dedicada a brindar momentos inolvidables y servicios gastronómicos de alta
+        calidad; ponemos todo nuestro “amor” y máximo empeño en beneficio de nuestros clientes;
+        desarrollamos nuestro servicio a partir de los talentos y los valores de nuestros
+        colaboradores, somos una empresa que día a día lucha por desarrollar mejores condiciones
+        laborales y un mejor nivel de vida para nuestros colaboradores y sus familias, en beneficio de
+        la organización.
+        </p>
+        <br>
+        <br>
+        <p id="Vision">
+            Visión
+            <br>
+            Ser reconocidos por brindar a nuestros clientes sensaciones agradables y momentos felices.
+        Posicionarnos en el corazón de las familias  Bogotanas y de todos los que nos visitan.
+        Contribuir y aportar nuestro granito de arena, para generar una colombia feliz y en paz; que
+        brinde un mejor futuro a nuestras próximas generaciones.
+</p>
+<br>
+<br>
+<center>
+<h2 id="Contacto">Ubicanos</h2>
+<br>
+<p class="info">Telefonos:333-4583654 / 358-2546978 <br>Dirección: Cl. 15 #31-42, Bogotá</p>
+<br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63629.92728748596!2d-74.13302977075186!3d4.617189166398587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8e3f996f79f4e283%3A0x5856b6b66ab6bd34!2sCENIGRAF%2C%20Calle%2015%2C%20Bogot%C3%A1!3m2!1d4.6171048!2d-74.09182969999999!5e0!3m2!1ses!2sco!4v1695286816825!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</center>
+</div>  
+<footer>
+    <h2 class="pie-pagina"><i class='bx bx-copyright'></i>     Restaurante del Chef <br>
+        <a href="http://www,facebook.com" style="color: black"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="http://www.twitter.com" style="color: black"><i class='bx bxl-twitter' ></i></a>
+        <a href="http://www.Instagram.com" style="color: black"><i class='bx bxl-instagram-alt' ></i></a>
+        <a href="http://www.tiktok.com" style="color: black"><i class='bx bxl-tiktok' ></i></a></h2>
+</footer>             
+</body>     
+</html>
+
+           
+            
